@@ -8,7 +8,7 @@ const Home = ({ home }) => {
   return (
     <GlobalContext.Consumer>
       {({ }) => (
-        <Layout header={home.header} footer={home.contact}>
+        <Layout>
           <Seo seo={home.seo} />
           <div>Hello homepage!</div>
         </Layout>
