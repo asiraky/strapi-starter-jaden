@@ -1,9 +1,9 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
-		const initialProps = await Document.getInitialProps(ctx)
-		return { ...initialProps }
+		const initialProps = await Document.getInitialProps(ctx);
+		return { ...initialProps };
 	}
 
 	render() {
@@ -11,7 +11,7 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					{/* Google Tag Manager */}
-					<script dangerouslySetInnerHTML={{ __html: `window.load(function (){ console.log("hello world"); });` }} />
+					<script dangerouslySetInnerHTML={{ __html: `` }} />
 					{/* End Google Tag Manager */}
 				</Head>
 				<body>
@@ -26,4 +26,4 @@ class MyDocument extends Document {
 	}
 }
 
-export default MyDocument
+export default MyDocument;
