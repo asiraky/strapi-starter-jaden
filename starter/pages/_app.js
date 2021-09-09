@@ -1,6 +1,6 @@
 import App from 'next/app';
 
-import '../assets/css/globals.css';
+import '../assets/css/global.css';
 
 import { fetchAPI } from '../lib/api';
 import { GlobalContext } from '../components/GlobalContext';

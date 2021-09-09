@@ -3,6 +3,7 @@ import React from 'react';
 import { GlobalContext } from '../components/GlobalContext';
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
+import { fetchAPI } from '../lib/api';
 
 const Home = ({ home }) => {
   return (
